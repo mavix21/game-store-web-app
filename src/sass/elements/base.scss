@@ -1,0 +1,57 @@
+html, body {
+	height: 100%;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'HankenGrotesk', system-ui;
+  font-weight: var(--fw-regular);
+  font-size: var(--s0);
+  line-height: var(--ratio);
+	color: hsl(var(--fg-primary));
+  background-color: hsl(var(--bg-primary));
+  color-scheme: dark;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+  font-weight: var(--fw-bold);
+  line-height: var(--line-height-small);
+}
+
+h1 {
+  font-size: var(--s4);
+}
+
+h2 {
+  font-size: var(--s3);
+}
+
+h3 {
+  font-size: var(--s2);
+}
+
+h4 {
+  font-size: var(--s1);
+}
+
+h5 {
+  font-size: var(--s0);
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}

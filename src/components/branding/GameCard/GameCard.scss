@@ -1,0 +1,11 @@
+.game-card {
+  &__title {
+    font-weight: var(--fw-bold);
+    font-size: var(--s1);
+  }
+
+  &__studio {
+    color: hsl(var(--fg-muted));
+    font-size: var(--s0);
+  }
+}

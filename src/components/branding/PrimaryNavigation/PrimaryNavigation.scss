@@ -1,0 +1,50 @@
+.primary-navigation {
+  background-color: hsl(var(--bg-primary));
+  padding-block: var(--s2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  & [role="tablist"] {
+    position: relative;
+    width: fit-content;
+    line-height: 2;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: hsl(var(--accent-400));
+      opacity: 0.8;
+      scale: var(--_width, 0.227) 1;
+      translate: var(--_left, 0) 0;
+      transition: translate 150ms ease-in-out, scale 150ms ease-in-out;
+      transform-origin: left;
+    }
+  }
+
+  & [role="tab"] {
+    color: hsl(var(--fg-muted));
+
+    &:hover {
+      color: hsl(var(--fg-primary));
+    }
+
+    &[aria-selected="true"] {
+      color: hsl(var(--fg-primary));
+    }
+  }
+
+  & .shopping-cart-link {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    &:hover {
+      color: hsl(var(--accent-400));
+    }
+  }
+}
