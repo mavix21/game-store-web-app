@@ -1,6 +1,8 @@
 :root {
   --ratio: 1.4;
   --line-height-small: calc(var(--ratio) * 0.8);
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
   --s-1: calc(var(--s0) / var(--ratio));
   --s0: 1rem;
   --s1: calc(var(--s0) * var(--ratio));
