@@ -26,9 +26,9 @@
               <a
                 href="#"
                 class="login-logo"
-              >
-                <cluster-l space="var(--s-1)" align="center">
-                  <i class="ri-user-3-fill ri-xl"></i>Iniciar Sesión
+                >
+                <cluster-l space="var(--s-3)" align="center">
+                  <i class="ri-user-3-fill ri-xl"></i><span>Iniciar Sesión</span>
                 </cluster-l>
               </a>
             </cluster-l>
@@ -53,36 +53,36 @@
                   aria-controls="tabpanel-1"
                   aria-selected="true"
                   tabindex="0"
-                >
+                  >
                   Todos
                 </button>
-                <button
-                  id="tab-2"
-                  role="tab"
-                  aria-controls="tabpanel-2"
-                  aria-selected="false"
-                  tabindex="-1"
-                >
-                  PC
-                </button>
-                <button
-                  id="tab-3"
-                  role="tab"
-                  aria-controls="tabpanel-3"
-                  aria-selected="false"
-                  tabindex="-1"
-                >
-                  PS4
-                </button>
-                <button
-                  id="tab-4"
-                  role="tab"
-                  aria-controls="tabpanel-4"
-                  aria-selected="false"
-                  tabindex="-1"
-                >
-                  Wii U
-                </button>
+                  <button
+                    id="tab-2"
+                    role="tab"
+                    aria-controls="tabpanel-2"
+                    aria-selected="false"
+                    tabindex="-1"
+                    >
+                    PC
+                  </button>
+                    <button
+                      id="tab-3"
+                      role="tab"
+                      aria-controls="tabpanel-3"
+                      aria-selected="false"
+                      tabindex="-1"
+                      >
+                      PS4
+                    </button>
+                      <button
+                        id="tab-4"
+                        role="tab"
+                        aria-controls="tabpanel-4"
+                        aria-selected="false"
+                        tabindex="-1"
+                        >
+                        Wii U
+                      </button>
               </cluster-l>
               <cluster-l>
                 <a href="#" class="shopping-cart-link">
@@ -106,12 +106,12 @@
                   >
                   <i class="ri-arrow-left-s-line ri-2x"></i>
                 </button>
-                <button
-                  class="button icon carousel__button next"
-                  data-carousel-button="next"
-                  >
-                  <i class="ri-arrow-right-s-line ri-2x"></i>
-                </button>
+              <button
+                class="button icon carousel__button next"
+                data-carousel-button="next"
+                >
+                <i class="ri-arrow-right-s-line ri-2x"></i>
+              </button>
               </div>
               <h2 id="carouselheading" class="visuallyhidden">Juegos Destacados</h3>
               <div class="carousel__scrollable">
@@ -141,41 +141,63 @@
                 role="tabpanel"
                 tabindex="0"
                 aria-labelledby="tab-1"
-              >
+                >
                 <stack-l space="var(--s2)">
                   <h2 class="fs-s2">Los más vendidos</h2>
-                  <grid-l space="var(--s1)" min="240px" auto="fill">
+                  <grid-l space="var(--s1)" min="224px" auto="fill">
                     <a href="#">
                       <box-l class="game-card">
-                        <stack-l>
+                        <stack-l space="var(--s-1)">
                           <frame-l ratio="3:4">
                             <img src="dead-by-daylight.jpg" alt="">
                           </frame-l>
-                          <stack-l space="var(--s-1)">
+                          <stack-l space="var(--s-3)">
                             <h4 class="game-card__title">Dead By Daylight</h4>
                             <p class="game-card__studio">Electronic Arts</p>
                           </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                            >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price">27,99 PEN</span>
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
+                          </cluster-l>
                         </stack-l>
                       </box-l>
                     </a>
                     <box-l class="game-card">
-                      <frame-l ratio="3:4">
-                        <img src="the-last-of-us.jpg" alt="">
-                      </frame-l>
-                      <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-last-of-us.jpg" alt="">
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">The Last Of Us</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
-                      </box-l>
+                        <cluster-l
+                          space="var(--s-3)"
+                          align="center"
+                          justify="space-between"
+                          >
+                          <span class="game-card__discount">-20%</span>
+                          <cluster-l space="var(--s-3)">
+                            <span class="game-card__old-price">53 PEN</span>
+                            <span class="game-card__price">42,40 PEN</span>
+                          </cluster-l>
+                        </cluster-l>
+                      </stack-l>
                     </box-l>
                     <box-l class="game-card">
                       <frame-l ratio="3:4">
                         <img src="alan-wake.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
-                          <h4 class="game-card__title">Alan Wake</h4>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Alan Wake II</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
                       </box-l>
@@ -185,8 +207,8 @@
                         <img src="inmortals-of-aveum.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
-                          <h4 class="game-card__title">Egestas Sodales Morbi</h4>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Inmortals Of Aveum</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
                       </box-l>
@@ -196,7 +218,7 @@
                         <img src="lor-gollum.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -207,7 +229,7 @@
                         <img src="planet-of-iana.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -218,7 +240,7 @@
                         <img src="the-impossible.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -229,7 +251,7 @@
                         <img src="deepest-chamber-10ect.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -240,7 +262,7 @@
                         <frame-l ratio="3:4">
                           <img src="forest-fire.jpg" alt="">
                         </frame-l>
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Dead By Daylight</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -251,7 +273,7 @@
                         <frame-l ratio="3:4">
                           <img src="the-evil-within.jpg" alt="">
                         </frame-l>
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">The Evil Within</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -262,7 +284,7 @@
                         <frame-l ratio="3:4">
                           <img src="deadlink.jpg" alt="">
                         </frame-l>
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">The Evil Within</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -273,7 +295,7 @@
                         <img src="ghostrunner2.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -284,7 +306,7 @@
                         <img src="farlight-84.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Farlight 84</p>
                         </stack-l>
@@ -295,7 +317,7 @@
                         <img src="creepy-tale.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -311,20 +333,31 @@
                 tabindex="0"
                 aria-labelledby="tab-2"
                 hidden
-              >
+                >
                 <stack-l space="var(--s2)">
                   <h2 class="fs-s2">Los más vendidos</h2>
-                  <grid-l space="var(--s1)" min="240px" auto="fill">
+                  <grid-l space="var(--s1)" min="224px" auto="fill">
                     <a href="#">
                       <box-l class="game-card">
                         <stack-l>
                           <frame-l ratio="3:4">
                             <img src="dead-by-daylight.jpg" alt="">
                           </frame-l>
-                          <stack-l space="var(--s-1)">
+                          <stack-l space="var(--s-3)">
                             <h4 class="game-card__title">Dead By Daylight</h4>
                             <p class="game-card__studio">Electronic Arts</p>
                           </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                            >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price">27,99 PEN</span>
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
+                          </cluster-l>
                         </stack-l>
                       </box-l>
                     </a> 
@@ -333,7 +366,7 @@
                         <img src="ghostrunner2.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -344,7 +377,7 @@
                         <img src="farlight-84.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Farlight 84</p>
                         </stack-l>
@@ -355,7 +388,7 @@
                         <frame-l ratio="3:4">
                           <img src="the-evil-within.jpg" alt="">
                         </frame-l>
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">The Evil Within</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -366,7 +399,7 @@
                         <img src="alan-wake.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Alan Wake</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -382,20 +415,31 @@
                 tabindex="0"
                 aria-labelledby="tab-3"
                 hidden
-              >
+                >
                 <stack-l space="var(--s2)">
                   <h2 class="fs-s2">Los más vendidos</h2>
-                  <grid-l space="var(--s1)" min="240px" auto="fill">
+                  <grid-l space="var(--s1)" min="224px" auto="fill">
                     <a href="#">
                       <box-l class="game-card">
                         <stack-l>
                           <frame-l ratio="3:4">
                             <img src="dead-by-daylight.jpg" alt="">
                           </frame-l>
-                          <stack-l space="var(--s-1)">
+                          <stack-l space="var(--s-3)">
                             <h4 class="game-card__title">Dead By Daylight</h4>
                             <p class="game-card__studio">Electronic Arts</p>
                           </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                            >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price">27,99 PEN</span>
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
+                          </cluster-l>
                         </stack-l>
                       </box-l>
                     </a>
@@ -404,7 +448,7 @@
                         <img src="the-last-of-us.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">The Last Of Us</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -415,7 +459,7 @@
                         <img src="inmortals-of-aveum.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -426,7 +470,7 @@
                         <img src="lor-gollum.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -437,7 +481,7 @@
                         <img src="the-impossible.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -453,17 +497,17 @@
                 tabindex="0"
                 aria-labelledby="tab-4"
                 hidden
-              >
+                >
                 <stack-l space="var(--s2)">
                   <h2 class="fs-s2">Los más vendidos</h2>
-                  <grid-l space="var(--s1)" min="240px" auto="fill">
+                  <grid-l space="var(--s1)" min="224px" auto="fill">
                     <a href="#">
                       <box-l class="game-card">
                         <stack-l>
                           <frame-l ratio="3:4">
                             <img src="forest-fire.jpg" alt="">
                           </frame-l>
-                          <stack-l space="var(--s-1)">
+                          <stack-l space="var(--s-3)">
                             <h4 class="game-card__title">Dead By Daylight</h4>
                             <p class="game-card__studio">Electronic Arts</p>
                           </stack-l>
@@ -475,7 +519,7 @@
                         <img src="deepest-chamber-10ect.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Deepest Chamber</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -486,7 +530,7 @@
                         <img src="the-impossible.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -497,7 +541,7 @@
                         <img src="deadlink.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -508,7 +552,7 @@
                         <img src="creepy-tale.jpg" alt="">
                       </frame-l>
                       <box-l padding="1rem">
-                        <stack-l space="var(--s-1)">
+                        <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">Egestas Sodales Morbi</h4>
                           <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
@@ -521,14 +565,14 @@
             <div></div>
           </stack-l>
         </main>
-          <!-- <footer>
-            <nav class="secondary-nav">
-              <cluster-l justify="center">
-                <a href="#"><i class="ri-youtube-fill"></i></a>
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-              </cluster-l>
-            </nav>
+        <!-- <footer>
+          <nav class="secondary-nav">
+          <cluster-l justify="center">
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          </cluster-l>
+          </nav>
           </footer> -->
       </stack-l>
     </center-l>
