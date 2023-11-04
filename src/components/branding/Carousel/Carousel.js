@@ -24,7 +24,9 @@ function moveToLeft () {
 
 function disableEnable () {
   prev.disabled = scrollable.scrollLeft < 1;
-  next.disabled = scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth;
+  console.log(scrollable.scrollLeft, slider.scrollWidth - slider.offsetWidth);
+  next.disabled = scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth
+    || scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth - 1;
 }
 
 let debounced;
@@ -36,7 +38,8 @@ scrollable.addEventListener('scroll', () => {
 if (scrollable.scrollLeft > 0) scrollable.scrollLeft = 0;
 
 setInterval(() => {
-  if (scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth) {
+  if (scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth
+    || scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth - 1) {
     scrollable.scrollLeft = 0;
   } else {
     moveToRight();
