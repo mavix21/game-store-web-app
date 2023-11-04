@@ -8,4 +8,16 @@
     color: hsl(var(--fg-muted));
     font-size: var(--s0);
   }
+
+  &__discount {
+    padding-inline: var(--s-1);
+    padding-block: var(--s-3);
+    background-color: hsl(var(--accent-600));
+    border-radius: 0.5rem;
+  }
+
+  &__old-price {
+    color: hsl(var(--fg-muted));
+    text-decoration: line-through;
+  }
 }
