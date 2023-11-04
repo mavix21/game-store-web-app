@@ -1,12 +1,12 @@
 .game-card {
   &__title {
     font-weight: var(--fw-bold);
-    font-size: var(--s1);
+    font-size: var(--s0);
   }
 
   &__studio {
-    color: hsl(var(--fg-muted));
     font-size: var(--s0);
+    color: hsl(var(--fg-muted));
   }
 
   &__discount {
