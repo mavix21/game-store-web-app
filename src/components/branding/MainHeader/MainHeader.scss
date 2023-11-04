@@ -1,3 +1,5 @@
+@use '../../../sass/abstracts/mixins';
+
 .main-header {
   background-color: hsl(var(--bg-secondary));
   color: hsl(var(--fg-muted));
@@ -10,9 +12,11 @@
   } 
 
   & .social-link {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+    @include mixins.transition(
+      300ms,
+      "cubic-bezier(0.4, 0, 0.2, 1)",
+      color, background-color, border-color, text-decoration-color, fill, stroke
+    );
 
     &:hover {
       color: hsl(var(--accent-500));
@@ -20,9 +24,11 @@
   }
 
   & .login-logo {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
+    @include mixins.transition(
+      300ms,
+      "cubic-bezier(0.4, 0, 0.2, 1)",
+      color, background-color, border-color, text-decoration-color, fill, stroke
+    );
 
     &:hover {
       color: hsl(var(--fg-primary));
