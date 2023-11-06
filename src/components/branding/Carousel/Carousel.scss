@@ -96,10 +96,21 @@
     &__title-img {
       width: 150px;
       height: 55px;
-      background-image: url("/alan-wake-logo.png");
       background-position: left bottom;
       background-repeat: no-repeat;
       background-size: contain;
+
+      &--alan-wake {
+        background-image: url("/alan-wake-logo.png");
+      }
+
+      &--farlight {
+        background-image: url("/farlight-84-logo.png");
+      }
+
+      &--palia {
+        background-image: url("/palia-logo.png");
+      }
     }
   }
 
