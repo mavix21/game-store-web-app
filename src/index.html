@@ -11,10 +11,13 @@
   <body>
     <center-l
       max="100%"
-      >
+    >
       <header class="main-header">
         <nav class="secondary-navigation">
-          <cluster-l justify="space-between" align="center">
+          <cluster-l
+            justify="space-between"
+            align="center"
+          >
             <h1 class="logo">CiberGames</h1>
             <cluster-l
               align="center"
@@ -29,7 +32,7 @@
               <a
                 href="#"
                 class="login-logo"
-                >
+              >
                 <cluster-l space="var(--s-3)" align="center">
                   <i class="ri-user-3-fill ri-xl"></i><span>Iniciar Sesión</span>
                 </cluster-l>
@@ -43,7 +46,7 @@
     <center-l
       max="80rem"
       gutters="var(--s2)"
-      >
+    >
       <stack-l space="var(--s1)">
         <main>
           <nav class="primary-navigation">
@@ -57,35 +60,35 @@
                   aria-selected="true"
                   tabindex="0"
                   >
-                  Todos
+                    Todos
                 </button>
-                  <button
-                    id="tab-2"
-                    role="tab"
-                    aria-controls="tabpanel-2"
-                    aria-selected="false"
-                    tabindex="-1"
-                    >
+                <button
+                  id="tab-2"
+                  role="tab"
+                  aria-controls="tabpanel-2"
+                  aria-selected="false"
+                  tabindex="-1"
+                  >
                     PC
-                  </button>
-                    <button
-                      id="tab-3"
-                      role="tab"
-                      aria-controls="tabpanel-3"
-                      aria-selected="false"
-                      tabindex="-1"
-                      >
-                      PS4
-                    </button>
-                      <button
-                        id="tab-4"
-                        role="tab"
-                        aria-controls="tabpanel-4"
-                        aria-selected="false"
-                        tabindex="-1"
-                        >
-                        Wii U
-                      </button>
+                </button>
+                <button
+                  id="tab-3"
+                  role="tab"
+                  aria-controls="tabpanel-3"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  PS4
+                </button>
+                <button
+                  id="tab-4"
+                  role="tab"
+                  aria-controls="tabpanel-4"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Wii U
+                </button>
               </cluster-l>
               <cluster-l>
                 <a href="#" class="shopping-cart-link">
@@ -133,7 +136,7 @@
                       <stack-l>
                         <stack-l space="var(--s-2)">
                           <img src="alan-wake-logo.png" alt="" class="visuallyhidden">
-                          <div class="featured-game__title-img"></div>
+                          <div class="featured-game__title-img featured-game__title-img--alan-wake"></div>
                           <h3 class="visuallyhidden">Alan Wake</h3>
                           <p>Ya disponible</p>
                           <p>
@@ -151,17 +154,65 @@
                           srcset="farlight-84-carousel-mobile.jpg"
                           media="(max-width: 600px)"
                         >
-                        <img src="farlight-84-carousel-desktop.jpg" alt="">
+                        <img
+                          src="farlight-84-carousel-desktop.jpg"
+                          alt=""
+                        >
                       </picture>
                     </frame-l>
                     <div class="featured-game__gradient">
                     </div>
+                    <div class="featured-game__text">
+                      <stack-l>
+                        <stack-l space="var(--s-2)">
+                          <img
+                            src="farlight-84-logo.png"
+                            alt=""
+                            class="visuallyhidden"
+                          >
+                          <div class="featured-game__title-img featured-game__title-img--farlight"></div>
+                          <h3 class="visuallyhidden">Farlight 84</h3>
+                          <p>Ya disponible</p>
+                          <p>
+                            Un vertiginoso Battle Royale entre héroes. En
+                            Farlight 84, álzate sobre todos.
+                          </p>
+                        </stack-l>
+                      </stack-l>
+                    </div>
                   </li>
                   <li class="featured-game" id="slide-3">
                     <frame-l class="featured-game__frame">
-                      <img src="slide-3.jpg" alt="">
+                      <picture>
+                        <source
+                          srcset="palia-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        >
+                        <img
+                        src="palia-carousel-desktop.jpg"
+                        alt=""
+                        >
+                      </picture>
                     </frame-l>
                     <div class="featured-game__gradient">
+                    </div>
+                    <div class="featured-game__text">
+                      <stack-l>
+                        <stack-l space="var(--s-2)">
+                          <img
+                            src="farlight-84-logo.png"
+                            alt=""
+                            class="visuallyhidden"
+                          >
+                          <div class="featured-game__title-img featured-game__title-img--palia"></div>
+                          <h3 class="visuallyhidden">Farlight 84</h3>
+                          <p>Ya disponible</p>
+                          <p>
+                            Un vertiginoso Battle Royale entre héroes. En
+                            Farlight 84, álzate sobre todos.
+                          </p>
+                        </stack-l>
+                      </stack-l>
                     </div>
                   </li>
                 </ul>
