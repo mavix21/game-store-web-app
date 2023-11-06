@@ -16,7 +16,10 @@
         <nav class="secondary-navigation">
           <cluster-l justify="space-between" align="center">
             <h1 class="logo">CiberGames</h1>
-            <cluster-l align="center">
+            <cluster-l
+              align="center"
+              space="var(--s0)"
+            >
               <a href="#" class="social-link"><i class="ri-twitch-fill ri-lg"></i></a>
               <a href="#" class="social-link"><i class="ri-youtube-fill ri-lg"></i></a>
               <a href="#" class="social-link"><i class="ri-facebook-fill ri-lg"></i></a>
@@ -101,40 +104,66 @@
               <div class="carousel__buttons">
                 <button
                   class="button icon carousel__button prev"
-                  data-carousel-button="prev"
                   disabled
                   >
                   <i class="ri-arrow-left-s-line ri-2x"></i>
                 </button>
-              <button
-                class="button icon carousel__button next"
-                data-carousel-button="next"
-                >
-                <i class="ri-arrow-right-s-line ri-2x"></i>
-              </button>
+                <button
+                  class="button icon carousel__button next"
+                  >
+                  <i class="ri-arrow-right-s-line ri-2x"></i>
+                </button>
               </div>
               <h2 id="carouselheading" class="visuallyhidden">Juegos Destacados</h3>
               <div class="carousel__scrollable">
                 <ul class="carousel__list" id="slider">
-                  <li class="carousel__slide">
-                    <frame-l>
-                      <img src="slide-1.jpg" alt="">
+                  <li class="featured-game">
+                    <frame-l class="featured-game__frame">
+                      <picture>
+                        <source
+                          srcset="alan-wake-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        >
+                        <img src="slide-1.jpg" alt="">
+                      </picture>
                     </frame-l>
+                    <div class="featured-game__gradient">
+                    </div>
+                    <div class="featured-game__text">
+                      <stack-l>
+                        <stack-l space="var(--s-2)">
+                          <div class="featured-game__title-img"></div>
+                          <h3 class="visuallyhidden">Alan Wake</h3>
+                          <p>Ya disponible</p>
+                          <p>
+                            Una serie de asesinatos rituales amenaza Bright
+                            Falls en el nuevo thriller psicológico.
+                          </p>
+                        </stack-l>
+                      </stack-l>
+                    </div>
                   </li>
-                  <li class="carousel__slide">
-                    <frame-l>
-                      <img src="slide-2.jpg" alt="">
+                  <li class="featured-game">
+                    <frame-l class="featured-game__frame">
+                      <picture>
+                        <source
+                          srcset="farlight-84-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        >
+                        <img src="farlight-84-carousel-desktop.jpg" alt="">
+                      </picture>
                     </frame-l>
+                    <div class="featured-game__gradient">
+                    </div>
                   </li>
-                  <li class="carousel__slide" id="slide-3">
-                    <frame-l>
+                  <li class="featured-game" id="slide-3">
+                    <frame-l class="featured-game__frame">
                       <img src="slide-3.jpg" alt="">
                     </frame-l>
                   </li>
                 </ul>
               </div>
             </section>
-
             <div class="tab-panels">
               <section
                 id="tabpanel-1"
