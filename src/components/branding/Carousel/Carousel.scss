@@ -22,7 +22,6 @@
   }
 
   &__scrollable {
-    touch-action: pan-y;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
