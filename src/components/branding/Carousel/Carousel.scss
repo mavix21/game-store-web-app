@@ -1,37 +1,3 @@
-// .carousel {
-//   position: relative;
-//   border-radius: 0.75rem;
-//
-//   &__button {
-//     color: hsl(var(--neutral-100) / 0.5);
-//     position: absolute;
-//     z-index: 10;
-//     top: 50%;
-//     transform: translateY(-50%);
-//
-//     &.prev {
-//       left: 1rem;
-//     }
-//
-//     &.next {
-//       right: 1rem;
-//     }
-//   }
-//
-//   &__list {
-//     display: flex;
-//     overflow-x: auto;
-//     // overflow-y: hidden;
-//     scroll-snap-type: x mandatory;
-//     scroll-behavior: smooth;
-//
-//     & > * {
-//       width: 100%;
-//       flex: 0 0 auto;
-//     } 
-//   }
-// }
-
 .carousel {
   position: relative;
 
@@ -56,6 +22,7 @@
   }
 
   &__scrollable {
+    touch-action: pan-y;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -63,6 +30,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: inline mandatory;
     scrollbar-width: none;
+    border-radius: 1rem;
 
     &::-webkit-scrollbar {
       width: 0;
@@ -72,12 +40,68 @@
 
   &__list {
     display: flex;
-    white-space: nowrap;
 
     & > li {
       width: 100%;
       scroll-snap-align: start;
       flex: 0 0 auto;
+      border-radius: 1rem;
+      overflow: hidden;
     } 
   }
+
+  & .featured-game {
+    position: relative;
+
+    &__frame {
+      @media (max-width: 600px) {
+        aspect-ratio: 3 / 4;
+      }
+    }
+
+    &__gradient {
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      left: 0px;
+      bottom: 0px;
+      z-index: 0;
+      opacity: 0.6;
+      background: linear-gradient(270deg, rgba(11, 11, 11, 0) 0%, rgb(11, 11, 11) 100%, rgb(11, 11, 11) 100%);
+      pointer-events: none;
+
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 80%;
+        background: linear-gradient(to top, rgba(11, 11, 11, 0.85), rgba(11, 11, 11, 0));
+      }
+    }
+
+    &__text {
+      position: absolute;
+      left: 32px;
+      bottom: 32px;
+      z-index: 1;
+
+      @media (max-width: 600px) {
+        left: 0;
+        bottom: 0;
+        padding: var(--s1);
+      }
+
+      & p {
+        max-inline-size: 45ch;
+      }
+    }
+
+    &__title-img {
+      width: 150px;
+      height: 55px;
+      background-image: url("alan-wake-logo.png");
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
 }

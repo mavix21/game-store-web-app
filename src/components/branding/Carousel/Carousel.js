@@ -37,11 +37,11 @@ scrollable.addEventListener('scroll', () => {
 
 if (scrollable.scrollLeft > 0) scrollable.scrollLeft = 0;
 
-setInterval(() => {
+/* setInterval(() => {
   if (scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth
     || scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth - 1) {
     scrollable.scrollLeft = 0;
   } else {
     moveToRight();
   }
-}, 5000);
+}, 5000); */
