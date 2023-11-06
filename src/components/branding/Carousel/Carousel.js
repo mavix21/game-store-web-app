@@ -24,7 +24,6 @@ function moveToLeft () {
 
 function disableEnable () {
   prev.disabled = scrollable.scrollLeft < 1;
-  console.log(scrollable.scrollLeft, slider.scrollWidth - slider.offsetWidth);
   next.disabled = scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth
     || scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth - 1;
 }
