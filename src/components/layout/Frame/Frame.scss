@@ -6,6 +6,8 @@ frame-l {
   align-items: center;
 
   & > img,
+  & > picture,
+  & > picture > img,
   & > video {
     inline-size: 100%;
     block-size: 100%;
