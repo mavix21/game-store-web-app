@@ -15,14 +15,20 @@ next.addEventListener('click', () => {
 })
 
 function moveToRight () {
-  scrollable.scrollLeft += scrollAmount;
+  const scrollable = document.querySelector('.carousel__scrollable');
+  const slider = document.getElementById('slider');
+  scrollable.scrollLeft += slider.offsetWidth;
 }
 
 function moveToLeft () {
-  scrollable.scrollLeft += -scrollAmount;
+  const scrollable = document.querySelector('.carousel__scrollable');
+  const slider = document.getElementById('slider');
+  scrollable.scrollLeft += -slider.offsetWidth;
 }
 
 function disableEnable () {
+  const scrollable = document.querySelector('.carousel__scrollable');
+  const slider = document.getElementById('slider');
   prev.disabled = scrollable.scrollLeft < 1;
   next.disabled = scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth
     || scrollable.scrollLeft === slider.scrollWidth - slider.offsetWidth - 1;
