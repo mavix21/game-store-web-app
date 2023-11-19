@@ -1,0 +1,10 @@
+.link {
+  display: inline-flex;
+  gap: var(--s-2);
+  align-items: center;
+  color: hsl(var(--fg-muted));
+
+  &:hover {
+    color: hsl(var(--fg-primary));
+  }
+}

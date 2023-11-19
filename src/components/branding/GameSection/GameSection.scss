@@ -1,0 +1,22 @@
+.game-section {
+  color: hsl(var(--fg-muted));
+
+  &__title {
+    color: hsl(var(--fg-primary));
+  }
+
+  &__main-description {
+    color: hsl(var(--fg-primary));
+    font-size: var(--s1);
+  }
+
+  &__price {
+    font-size: var(--s2);
+    font-weight: var(--fw-800);
+  }
+
+  &__description-title {
+    color: hsl(var(--fg-primary));
+    font-size: var(--s2);
+  }
+}

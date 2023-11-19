@@ -12,7 +12,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),
-        game: resolve(root, 'pages', 'index.html')
+        game: resolve(root, 'game', 'index.html')
       }
     }
   }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Game Store</title>
+  <script type="module" src="./game.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <center-l max="100%">
+
+    <header class="main-header">
+      <nav class="secondary-navigation">
+        <cluster-l justify="space-between" align="center">
+          <h1 class="logo">CiberGames</h1>
+          <cluster-l align="center" space="var(--s0)">
+            <a href="#" class="social-link"><i class="ri-twitch-fill ri-lg"></i></a>
+            <a href="#" class="social-link"><i class="ri-youtube-fill ri-lg"></i></a>
+            <a href="#" class="social-link"><i class="ri-facebook-fill ri-lg"></i></a>
+            <a href="#" class="social-link"><i class="ri-twitter-fill ri-lg"></i></a>
+          </cluster-l>
+          <cluster-l>
+            <a href="#" class="login-logo">
+              <cluster-l space="var(--s-3)" align="center">
+                <i class="ri-user-3-fill ri-xl"></i><span>Iniciar Sesión</span>
+              </cluster-l>
+            </a>
+          </cluster-l>
+        </cluster-l>
+      </nav>
+    </header>
+  </center-l>
+
+  <center-l max="80rem" gutters="var(--s2)">
+    <stack-l space="var(--s1)">
+      <main>
+        <nav class="primary-navigation">
+          <cluster-l justify="space-between" align="center">
+            <cluster-l>
+              <a href="../" class="link">
+                <i class="ri-gamepad-line"></i>
+                Explorar
+              </a>
+            </cluster-l>
+            <cluster-l>
+              <a href="#" class="shopping-cart-link">
+                <i class="ri-shopping-cart-2-fill ri-xl"></i>
+              </a>
+            </cluster-l>
+          </cluster-l>
+        </nav>
+        <sidebar-l side="right" sideWidth="18rem" contentMin="66%" class="sidebar">
+          <section class="game-section">
+            <stack-l space="1em">
+              <h2 class="game-section__title">Alan Wake 2</h2>
+              <section class="carousel" aria-labelledby="carouselheading" role="group">
+                <div class="carousel__buttons">
+                  <button class="button icon carousel__button prev" disabled>
+                    <i class="ri-arrow-left-s-line ri-2x"></i>
+                  </button>
+                  <button class="button icon carousel__button next">
+                    <i class="ri-arrow-right-s-line ri-2x"></i>
+                  </button>
+                </div>
+                <h2 id="carouselheading" class="visuallyhidden">Juegos Destacados</h3>
+                  <div class="carousel__scrollable">
+                    <ul class="carousel__list" id="slider">
+                      <li class="featured-game">
+                        <frame-l class="featured-game__frame">
+                          <img src="../alan-wake-game-slide-1.jpg" alt="">
+                          <!-- <picture> -->
+                          <!--   <source srcset="../alan-wake-game-slide-1.jpg" media="(max-width: 600px)"> -->
+                          <!-- </picture> -->
+                        </frame-l>
+                        <div class="featured-game__gradient">
+                        </div>
+                      </li>
+                      <li class="featured-game">
+                        <frame-l class="featured-game__frame">
+                          <picture>
+                            <source srcset="../farlight-84-carousel-mobile.jpg" media="(max-width: 600px)">
+                            <img src="../farlight-84-carousel-desktop.jpg" alt="">
+                          </picture>
+                        </frame-l>
+                        <div class="featured-game__gradient">
+                        </div>
+                        <div class="featured-game__text">
+                          <stack-l>
+                            <stack-l space="var(--s-2)">
+                              <img src="../farlight-84-logo.png" alt="" class="visuallyhidden">
+                              <div class="featured-game__title-img featured-game__title-img--farlight">
+                              </div>
+                              <h3 class="visuallyhidden"> Farlight 84</h3>
+                              <p>Ya disponible
+                              </p>
+                              <p>Un vertiginoso Battle Royale entre héroes. En Farlight 84, álzate sobre todos.</p>
+                            </stack-l>
+                          </stack-l>
+                        </div>
+                      </li>
+                      <li class="featured-game" id="slide-3">
+                        <frame-l class="featured-game__frame">
+                          <picture>
+                            <source srcset="../palia-carousel-mobile.jpg" media="(max-width: 600px)">
+                            <img src="../palia-carousel-desktop.jpg" alt="">
+                          </picture>
+                        </frame-l>
+                        <div class="featured-game__gradient">
+                        </div>
+                        <div class="featured-game__text">
+                          <stack-l>
+                            <stack-l space="var(--s-2)">
+                              <img src="../farlight-84-logo.png" alt="" class="visuallyhidden">
+                              <div class="featured-game__title-img featured-game__title-img--palia">
+                              </div>
+                              <h3 class="visuallyhidden"> Farlight 84</h3>
+                              <p>Ya disponible</p>
+                              <p>
+                                Un vertiginoso Battle Royale entre héroes. En Farlight 84, álzate sobre todos.
+                              </p>
+                            </stack-l>
+                          </stack-l>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              </section>
+              <p class="game-section__main-description">
+                Llega Saga Anderson para investigar asesinatos ritualistas en un pequeño pueblo. Alan Wake escribe una
+                oscura historia para dar forma a la realidad que lo rodea. Estos dos héroes están conectados de algún
+                modo. ¿Podrán convertirse en los héroes que han de ser?
+              </p>
+              <br>
+              <p class="game-section__description">
+                Alan Wake, un escritor perdido en una pesadilla más allá de nuestro mundo, escribe una historia
+                siniestra en un intento de darle forma a su realidad y escapar de su prisión. Perseguido por un horror
+                tenebroso, Wake trata de conservar la cordura y derrotar al diablo en su propio juego.
+              </p>
+              <p class="game-section__description">
+                Anderson y Wake son dos héroes embarcados en sendos viajes desesperados por dos realidades separadas,
+                conectados de una forma que ninguno puede entender: dos reflejos que se hacen eco mutuamente y afectan a
+                los mundos que los rodean.
+              </p>
+              <h2 class="game-section__description-title">Resuelve un misterio mortal</h2>
+              <p class="game-section__description">
+                Lo que comienza como la investigación de un asesinato se convierte rápidamente en un viaje de pesadilla.
+                Descubre la fuente de la oscuridad sobrenatural en esta historia de terror psicológico cargada de
+                suspense y giros inesperados.
+              </p>
+              <h2 class="game-section__description-title">Juega como dos personajes</h2>
+              <p class="game-section__description">
+                Vive tanto la historia de Alan Wake como la de Saga Anderson y descubre cómo se desarrollan los
+                acontecimientos desde perspectivas diferentes. Alterna entre la carrera a vida o muerte de Anderson para
+                resolver el caso y los intentos desesperados de Wake para reescribir su realidad con el fin de escapar
+                de las profundidades del lugar oscuro.
+              </p>
+            </stack-l>
+          </section>
+          <aside>
+            <stack-l>
+              <box-l padding="var(--s2)">
+                <frame-l>
+                  <img src="../alan-wake-game-logo.png" alt="">
+                </frame-l>
+              </box-l>
+              <p class="game-section__price">176,20 PEN</p>
+              <cluster-l direction="column" align="stretch">
+                <button class="button default">Comprar ahora</button>
+                <button class="button outline">
+                  Añadir al carrito
+                  <i class="ri-add-circle-line ri-xl"></i>
+                </button>
+              </cluster-l>
+            </stack-l>
+          </aside>
+        </sidebar-l>
+      </main>
+    </stack-l>
+  </center-l>
+</body>
+
+</html>

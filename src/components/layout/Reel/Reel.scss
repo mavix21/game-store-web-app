@@ -1,0 +1,19 @@
+reel-l {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+reel-l > * {
+  flex: 0 0 100%;
+}
+
+reel-l > img {
+  block-size: 100%;
+  flex-basis: auto;
+  inline-size: auto;
+}
+
+reel-l::-webkit-scrollbar {
+  block-size: 1rem;
+}

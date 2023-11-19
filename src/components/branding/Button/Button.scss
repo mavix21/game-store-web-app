@@ -1,11 +1,11 @@
 .button {
-  height: 2.5rem;
+  // height: 2.25rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--s1) var(--s0);
+  padding: var(--s-1) var(--s1);
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: calc(var(--radius) - 2px);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -17,13 +17,23 @@
     box-shadow: var(--ring-offset-shadow), var(--ring-shadow), var(--shadow, 0 0 #0000);
   }
 
-  &_default {
-    --radius: 100vw;
+  &.default {
+    // --radius: 100vw;
     color: hsl(var(--neutral-100));
-    background-color: hsl(var(--neutral-900));
+    background-color: hsl(var(--accent-600));
 
     &:hover {
-      background: var(--gradient-primary);
+      background-color: hsl(var(--accent-600) / .8);
+    }
+  }
+
+  &.outline {
+    border: 1px solid hsl(var(--fg-muted));
+    background: transparent;
+
+    &:hover {
+      background-color: hsl(var(--fg-muted) / .4);
+      color: hsl(var(--fg-primary));
     }
   }
 

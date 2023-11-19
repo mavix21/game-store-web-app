@@ -1,6 +1,6 @@
 .primary-navigation {
   background-color: hsl(var(--bg-primary));
-  padding-block: var(--s2);
+  padding-block: var(--s1);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -19,7 +19,7 @@
       left: 0;
       background: hsl(var(--accent-400));
       opacity: 0.8;
-      scale: var(--_width, 0.227) 1;
+      scale: var(--_width, 0.153) 1;
       translate: var(--_left, 0) 0;
       transition: translate 150ms ease-in-out, scale 150ms ease-in-out;
       transform-origin: left;
