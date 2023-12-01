@@ -1,99 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Game Store</title>
+    <script type="module" src="/main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <title>Game Store</title>
-  <script type="module" src="/main.js" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-
-<body>
-  <center-l max="100%">
-    <header class="main-header">
-      <nav class="secondary-navigation">
-        <cluster-l justify="space-between" align="center">
-          <h1 class="logo">CiberGames</h1>
-          <cluster-l align="center" space="var(--s0)">
-            <a href="#" class="social-link"><i class="ri-twitch-fill ri-lg"></i></a>
-            <a href="#" class="social-link"><i class="ri-youtube-fill ri-lg"></i></a>
-            <a href="#" class="social-link"><i class="ri-facebook-fill ri-lg"></i></a>
-            <a href="#" class="social-link"><i class="ri-twitter-fill ri-lg"></i></a>
-          </cluster-l>
-          <cluster-l>
-            <a href="#" class="login-logo">
-              <cluster-l space="var(--s-3)" align="center">
-                <i class="ri-user-3-fill ri-xl"></i><span>Iniciar
-                  Sesión</span>
-              </cluster-l>
-            </a>
-          </cluster-l>
-        </cluster-l>
-      </nav>
-    </header>
-  </center-l>
-
-  <center-l max="80rem" gutters="var(--s2)">
-    <stack-l space="var(--s1)">
-      <main>
-        <nav class="primary-navigation">
-          <h2 class="visuallyhidden" id="tabtitle">Navegación por tipo de consola</h2>
+  <body>
+    <center-l max="100%">
+      <header class="main-header">
+        <nav class="secondary-navigation">
           <cluster-l justify="space-between" align="center">
-            <cluster-l role="tablist" aria-labelledby="tabtitle">
-              <button id="tab-1" role="tab" aria-controls="tabpanel-1" aria-selected="true" tabindex="0">
-                Todos
-              </button>
-              <button id="tab-2" role="tab" aria-controls="tabpanel-2" aria-selected="false" tabindex="-1">
-                <i class="ri-computer-line"></i> <span>PC</span>
-              </button>
-              <button id="tab-3" role="tab" aria-controls="tabpanel-3" aria-selected="false" tabindex="-1">
-                <i class="ri-playstation-line"></i> <span>PS4</span>
-              </button>
-              <button id="tab-4" role="tab" aria-controls="tabpanel-4" aria-selected="false" tabindex="-1">
-                <i class="ri-switch-line"></i> <span>Switch</span>
-              </button>
+            <h1 class="logo">CiberGames</h1>
+            <cluster-l align="center" space="var(--s0)">
+              <a href="#" class="social-link">
+                <i class="ri-twitch-fill ri-lg"></i>
+              </a>
+              <a href="#" class="social-link"
+                ><i class="ri-youtube-fill ri-lg"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="ri-facebook-fill ri-lg"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="ri-twitter-fill ri-lg"></i
+              ></a>
             </cluster-l>
             <cluster-l>
-              <a href="#" class="shopping-cart-link">
-                <i class="ri-shopping-cart-2-fill ri-xl"></i>
+              <a href="#" class="login-logo">
+                <cluster-l space="var(--s-3)" align="center">
+                  <i class="ri-user-3-fill ri-xl"></i
+                  ><span>Iniciar Sesión</span>
+                </cluster-l>
               </a>
             </cluster-l>
           </cluster-l>
         </nav>
+      </header>
+    </center-l>
 
-        <stack-l space="var(--s4)">
-          <section class="carousel" aria-labelledby="carouselheading" role="group">
-            <div class="carousel__buttons">
-              <button class="button icon carousel__button prev" disabled>
-                <i class="ri-arrow-left-s-line ri-2x"></i>
-              </button>
-              <button class="button icon carousel__button next">
-                <i class="ri-arrow-right-s-line ri-2x"></i>
-              </button>
-            </div>
-            <h2 id="carouselheading" class="visuallyhidden">Juegos Destacados</h3>
+    <center-l max="80rem" gutters="var(--s2)">
+      <stack-l space="var(--s1)">
+        <main>
+          <nav class="primary-navigation">
+            <h2 class="visuallyhidden" id="tabtitle">
+              Navegación por tipo de consola
+            </h2>
+            <cluster-l justify="space-between" align="center">
+              <cluster-l role="tablist" aria-labelledby="tabtitle">
+                <button
+                  id="tab-1"
+                  role="tab"
+                  aria-controls="tabpanel-1"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  Todos
+                </button>
+                <button
+                  id="tab-2"
+                  role="tab"
+                  aria-controls="tabpanel-2"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  <i class="ri-computer-line"></i> <span>PC</span>
+                </button>
+                <button
+                  id="tab-3"
+                  role="tab"
+                  aria-controls="tabpanel-3"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  <i class="ri-playstation-line"></i> <span>PS4</span>
+                </button>
+                <button
+                  id="tab-4"
+                  role="tab"
+                  aria-controls="tabpanel-4"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  <i class="ri-switch-line"></i> <span>Switch</span>
+                </button>
+              </cluster-l>
+              <cluster-l>
+                <a href="#" class="shopping-cart-link">
+                  <i class="ri-shopping-cart-2-fill ri-xl"></i>
+                </a>
+              </cluster-l>
+            </cluster-l>
+          </nav>
+
+          <stack-l space="var(--s4)">
+            <section
+              class="carousel"
+              aria-labelledby="carouselheading"
+              role="group"
+            >
+              <div class="carousel__buttons">
+                <button class="button icon carousel__button prev" disabled>
+                  <i class="ri-arrow-left-s-line ri-2x"></i>
+                </button>
+                <button class="button icon carousel__button next">
+                  <i class="ri-arrow-right-s-line ri-2x"></i>
+                </button>
+              </div>
+              <h2 id="carouselheading" class="visuallyhidden">
+                Juegos Destacados
+              </h2>
               <div class="carousel__scrollable">
                 <ul class="carousel__list" id="slider">
                   <li class="featured-game">
                     <frame-l class="featured-game__frame">
                       <picture>
-                        <source srcset="alan-wake-carousel-mobile.jpg" media="(max-width: 600px)">
-                        <img src="slide-1.jpg" alt="">
+                        <source
+                          srcset="alan-wake-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        />
+                        <img src="slide-1.jpg" alt="" />
                       </picture>
                     </frame-l>
-                    <div class="featured-game__gradient">
-                    </div>
+                    <div class="featured-game__gradient"></div>
                     <div class="featured-game__text">
                       <stack-l>
                         <stack-l space="var(--s-2)">
-                          <img src="alan-wake-logo.png" alt="" class="visuallyhidden">
-                          <div class="featured-game__title-img featured-game__title-img--alan-wake">
-                          </div>
-                          <h3 class="visuallyhidden"> Alan Wake </h3>
+                          <img
+                            src="alan-wake-logo.png"
+                            alt=""
+                            class="visuallyhidden"
+                          />
+                          <div
+                            class="featured-game__title-img featured-game__title-img--alan-wake"
+                          ></div>
+                          <h3 class="visuallyhidden">Alan Wake</h3>
                           <p>Ya disponible</p>
-                          <p> Una serie de asesinatos rituales amenaza Bright Falls en el nuevo thriller psicológico.
+                          <p>
+                            Una serie de asesinatos rituales amenaza Bright
+                            Falls en el nuevo thriller psicológico.
                           </p>
                         </stack-l>
                       </stack-l>
@@ -102,22 +158,31 @@
                   <li class="featured-game">
                     <frame-l class="featured-game__frame">
                       <picture>
-                        <source srcset="farlight-84-carousel-mobile.jpg" media="(max-width: 600px)">
-                        <img src="farlight-84-carousel-desktop.jpg" alt="">
+                        <source
+                          srcset="farlight-84-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        />
+                        <img src="farlight-84-carousel-desktop.jpg" alt="" />
                       </picture>
                     </frame-l>
-                    <div class="featured-game__gradient">
-                    </div>
+                    <div class="featured-game__gradient"></div>
                     <div class="featured-game__text">
                       <stack-l>
                         <stack-l space="var(--s-2)">
-                          <img src="farlight-84-logo.png" alt="" class="visuallyhidden">
-                          <div class="featured-game__title-img featured-game__title-img--farlight">
-                          </div>
-                          <h3 class="visuallyhidden"> Farlight 84</h3>
-                          <p>Ya disponible
+                          <img
+                            src="farlight-84-logo.png"
+                            alt=""
+                            class="visuallyhidden"
+                          />
+                          <div
+                            class="featured-game__title-img featured-game__title-img--farlight"
+                          ></div>
+                          <h3 class="visuallyhidden">Farlight 84</h3>
+                          <p>Ya disponible</p>
+                          <p>
+                            Un vertiginoso Battle Royale entre héroes. En
+                            Farlight 84, álzate sobre todos.
                           </p>
-                          <p>Un vertiginoso Battle Royale entre héroes. En Farlight 84, álzate sobre todos.</p>
                         </stack-l>
                       </stack-l>
                     </div>
@@ -125,22 +190,30 @@
                   <li class="featured-game" id="slide-3">
                     <frame-l class="featured-game__frame">
                       <picture>
-                        <source srcset="palia-carousel-mobile.jpg" media="(max-width: 600px)">
-                        <img src="palia-carousel-desktop.jpg" alt="">
+                        <source
+                          srcset="palia-carousel-mobile.jpg"
+                          media="(max-width: 600px)"
+                        />
+                        <img src="palia-carousel-desktop.jpg" alt="" />
                       </picture>
                     </frame-l>
-                    <div class="featured-game__gradient">
-                    </div>
+                    <div class="featured-game__gradient"></div>
                     <div class="featured-game__text">
                       <stack-l>
                         <stack-l space="var(--s-2)">
-                          <img src="farlight-84-logo.png" alt="" class="visuallyhidden">
-                          <div class="featured-game__title-img featured-game__title-img--palia">
-                          </div>
-                          <h3 class="visuallyhidden"> Farlight 84</h3>
+                          <img
+                            src="farlight-84-logo.png"
+                            alt=""
+                            class="visuallyhidden"
+                          />
+                          <div
+                            class="featured-game__title-img featured-game__title-img--palia"
+                          ></div>
+                          <h3 class="visuallyhidden">Farlight 84</h3>
                           <p>Ya disponible</p>
                           <p>
-                            Un vertiginoso Battle Royale entre héroes. En Farlight 84, álzate sobre todos.
+                            Un vertiginoso Battle Royale entre héroes. En
+                            Farlight 84, álzate sobre todos.
                           </p>
                         </stack-l>
                       </stack-l>
@@ -148,290 +221,254 @@
                   </li>
                 </ul>
               </div>
-          </section>
-          <div class="tab-panels">
-            <section id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-              <stack-l space="var(--s2)">
-                <h2 class="fs-s2">Los más vendidos</h2>
-                <grid-l space="var(--s1)" min="208px" auto="fill">
-                  <div class="game-card">
-                    <a href="./game/">
-                      <stack-l space="var(--s-1)">
-                        <frame-l ratio="3:4" class="game-card__img-overlay">
-                          <img src="dead-by-daylight.jpg" alt="">
-                        </frame-l>
-                        <stack-l space="var(--s-3)">
-                          <h4 class="game-card__title">
-                            Dead By
-                            Daylight
-                          </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
-                        </stack-l>
-                        <cluster-l space="var(--s-3)" align="center" justify="space-between">
-                          <span class="game-card__discount">-25%</span>
-                          <cluster-l space="var(--s-3)">
-                            <span class="game-card__old-price">27,99 PEN</span>
-                            <span class="game-card__price">20,99
-                              PEN</span>
+            </section>
+            <div class="tab-panels">
+              <section
+                id="tabpanel-1"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-1"
+              >
+                <stack-l space="var(--s2)">
+                  <h2 class="fs-s2">Los más vendidos</h2>
+                  <grid-l space="var(--s1)" min="208px" auto="fill">
+                    <div class="game-card">
+                      <a href="./game/">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4" class="game-card__img-overlay">
+                            <img src="dead-by-daylight.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">Dead By Daylight</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                          >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price"
+                                >27,99 PEN</span
+                              >
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
                           </cluster-l>
-                        </cluster-l>
-                      </stack-l>
-                    </a>
-                    <div class="game-card__add-to-cart">
-                      <button>
-                        <i class="ri-add-circle-line ri-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="game-card">
-                    <a href="#">
-                      <stack-l space="var(--s-1)">
-                        <frame-l ratio="3:4" class="game-card__img-overlay">
-                          <img src="the-last-of-us.jpg" alt="">
-                        </frame-l>
-                        <stack-l space="var(--s-3)">
-                          <h4 class="game-card__title">
-                            The Last
-                            Of Us
-                          </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
                         </stack-l>
-                        <cluster-l space="var(--s-3)" align="center" justify="space-between">
-                          <span class="game-card__discount">-20%</span>
-                          <cluster-l space="var(--s-3)">
-                            <span class="game-card__old-price">53
-                              PEN</span>
-                            <span class="game-card__price">42,40
-                              PEN</span>
+                      </a>
+                      <div class="game-card__add-to-cart">
+                        <button>
+                          <i class="ri-add-circle-line ri-xl"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="game-card">
+                      <a href="#">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4" class="game-card__img-overlay">
+                            <img src="the-last-of-us.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">The Last Of Us</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                          >
+                            <span class="game-card__discount">-20%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price">53 PEN</span>
+                              <span class="game-card__price">42,40 PEN</span>
+                            </cluster-l>
                           </cluster-l>
-                        </cluster-l>
-                      </stack-l>
-                    </a>
-                    <div class="game-card__add-to-cart">
-                      <button>
-                        <i class="ri-add-circle-line ri-xl"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="game-card">
-                    <a href="#">
-                      <stack-l space="var(--s-1)">
-                        <frame-l ratio="3:4" class="game-card__img-overlay">
-                          <img src="alan-wake.jpg" alt="">
-                        </frame-l>
-                        <stack-l space="var(--s-3)">
-                          <h4 class="game-card__title">
-                            Alan
-                            Wake II
-                          </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
                         </stack-l>
-                        <cluster-l space="var(--s-3)" align="center" justify="space-between">
-                          <span class="game-card__discount">-20%</span>
-                          <cluster-l space="var(--s-3)">
-                            <span class="game-card__old-price">53
-                              PEN</span>
-                            <span class="game-card__price">42,40
-                              PEN</span>
+                      </a>
+                      <div class="game-card__add-to-cart">
+                        <button>
+                          <i class="ri-add-circle-line ri-xl"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="game-card">
+                      <a href="#">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4" class="game-card__img-overlay">
+                            <img src="alan-wake.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">Alan Wake II</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                          >
+                            <span class="game-card__discount">-20%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price">53 PEN</span>
+                              <span class="game-card__price">42,40 PEN</span>
+                            </cluster-l>
                           </cluster-l>
-                        </cluster-l>
-                      </stack-l>
-                    </a>
-                    <div class="game-card__add-to-cart">
-                      <button>
-                        <i class="ri-add-circle-line ri-xl"></i>
-                      </button>
+                        </stack-l>
+                      </a>
+                      <div class="game-card__add-to-cart">
+                        <button>
+                          <i class="ri-add-circle-line ri-xl"></i>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="inmortals-of-aveum.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Inmortals Of
-                          Aveum</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="lor-gollum.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="planet-of-iana.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-impossible.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="deepest-chamber-10ect.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="forest-fire.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Dead By Daylight
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-evil-within.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          The Evil Within
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="deadlink.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          The Evil Within
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="ghostrunner2.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="farlight-84.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Farlight 84</p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="creepy-tale.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <div class="game-card">
-                    <a href="#">
+                    <box-l class="game-card">
                       <stack-l space="var(--s-1)">
-                        <frame-l ratio="3:4" class="game-card__img-overlay">
-                          <img src="mbl.webp" alt="">
+                        <frame-l ratio="3:4">
+                          <img src="inmortals-of-aveum.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Inmortals Of Aveum</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="lor-gollum.jpg" alt="" />
                         </frame-l>
                         <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">
-                            Mobile
-                            Legends
-                            Bang
-                            Bang
+                            Egestas Sodales Morbi
                           </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts
-                          </p>
+                          <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
-                        <!-- <cluster-l
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="planet-of-iana.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-impossible.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="deepest-chamber-10ect.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="forest-fire.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Dead By Daylight</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-evil-within.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">The Evil Within</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="deadlink.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">The Evil Within</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="ghostrunner2.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="farlight-84.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Farlight 84</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="creepy-tale.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <div class="game-card">
+                      <a href="#">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4" class="game-card__img-overlay">
+                            <img src="mbl.webp" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">
+                              Mobile Legends Bang Bang
+                            </h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <!-- <cluster-l
                             space="var(--s-3)"
                             align="center"
                             justify="space-between"
@@ -442,296 +479,277 @@
                               <span class="game-card__price">20,99 PEN</span>
                             </cluster-l>
                           </cluster-l> -->
-                      </stack-l>
-                    </a>
-                    <div class="game-card__add-to-cart">
-                      <button>
-                        <i class="ri-add-circle-line ri-xl"></i>
-                      </button>
+                        </stack-l>
+                      </a>
+                      <div class="game-card__add-to-cart">
+                        <button>
+                          <i class="ri-add-circle-line ri-xl"></i>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </grid-l>
-              </stack-l>
-            </section>
+                  </grid-l>
+                </stack-l>
+              </section>
 
-            <section id="tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
-              <stack-l space="var(--s2)">
-                <h2 class="fs-s2">Los más vendidos</h2>
-                <grid-l space="var(--s1)" min="208px" auto="fill">
-                  <a href="#">
-                    <box-l class="game-card">
-                      <stack-l space="var(--s-1)">
-                        <frame-l ratio="3:4">
-                          <img src="dead-by-daylight.jpg" alt="">
-                        </frame-l>
-                        <stack-l space="var(--s-3)">
-                          <h4 class="game-card__title">
-                            Dead By
-                            Daylight
-                          </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
-                        </stack-l>
-                        <cluster-l space="var(--s-3)" align="center" justify="space-between">
-                          <span class="game-card__discount">-25%</span>
-                          <cluster-l space="var(--s-3)">
-                            <span class="game-card__old-price">27,99
-                              PEN</span>
-                            <span class="game-card__price">20,99
-                              PEN</span>
+              <section
+                id="tabpanel-2"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-2"
+                hidden
+              >
+                <stack-l space="var(--s2)">
+                  <h2 class="fs-s2">Los más vendidos</h2>
+                  <grid-l space="var(--s1)" min="208px" auto="fill">
+                    <a href="#">
+                      <box-l class="game-card">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4">
+                            <img src="dead-by-daylight.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">Dead By Daylight</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                          >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price"
+                                >27,99 PEN</span
+                              >
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
                           </cluster-l>
-                        </cluster-l>
-                      </stack-l>
-                    </box-l>
-                  </a>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="ghostrunner2.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="farlight-84.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Farlight 84</p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-evil-within.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          The Evil Within
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="alan-wake.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Alan Wake</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                </grid-l>
-              </stack-l>
-            </section>
-
-            <section id="tabpanel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
-              <stack-l space="var(--s2)">
-                <h2 class="fs-s2">Los más vendidos</h2>
-                <grid-l space="var(--s1)" min="208px" auto="fill">
-                  <a href="#">
+                        </stack-l>
+                      </box-l>
+                    </a>
                     <box-l class="game-card">
                       <stack-l space="var(--s-1)">
                         <frame-l ratio="3:4">
-                          <img src="dead-by-daylight.jpg" alt="">
+                          <img src="ghostrunner2.jpg" alt="" />
                         </frame-l>
                         <stack-l space="var(--s-3)">
                           <h4 class="game-card__title">
-                            Dead By
-                            Daylight
+                            Egestas Sodales Morbi
                           </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
+                          <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
-                        <cluster-l space="var(--s-3)" align="center" justify="space-between">
-                          <span class="game-card__discount">-25%</span>
-                          <cluster-l space="var(--s-3)">
-                            <span class="game-card__old-price">27,99
-                              PEN</span>
-                            <span class="game-card__price">20,99
-                              PEN</span>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="farlight-84.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Farlight 84</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-evil-within.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">The Evil Within</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="alan-wake.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Alan Wake</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                  </grid-l>
+                </stack-l>
+              </section>
+
+              <section
+                id="tabpanel-3"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-3"
+                hidden
+              >
+                <stack-l space="var(--s2)">
+                  <h2 class="fs-s2">Los más vendidos</h2>
+                  <grid-l space="var(--s1)" min="208px" auto="fill">
+                    <a href="#">
+                      <box-l class="game-card">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4">
+                            <img src="dead-by-daylight.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">Dead By Daylight</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                          <cluster-l
+                            space="var(--s-3)"
+                            align="center"
+                            justify="space-between"
+                          >
+                            <span class="game-card__discount">-25%</span>
+                            <cluster-l space="var(--s-3)">
+                              <span class="game-card__old-price"
+                                >27,99 PEN</span
+                              >
+                              <span class="game-card__price">20,99 PEN</span>
+                            </cluster-l>
                           </cluster-l>
-                        </cluster-l>
-                      </stack-l>
-                    </box-l>
-                  </a>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-last-of-us.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          The Last Of Us
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="inmortals-of-aveum.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="lor-gollum.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-impossible.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
-                      </stack-l>
-                    </stack-l>
-                  </box-l>
-                </grid-l>
-              </stack-l>
-            </section>
-
-            <section id="tabpanel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
-              <stack-l space="var(--s2)">
-                <h2 class="fs-s2">Los más vendidos</h2>
-                <grid-l space="var(--s1)" min="208px" auto="fill">
-                  <a href="#">
+                        </stack-l>
+                      </box-l>
+                    </a>
                     <box-l class="game-card">
                       <stack-l space="var(--s-1)">
                         <frame-l ratio="3:4">
-                          <img src="forest-fire.jpg" alt="">
+                          <img src="the-last-of-us.jpg" alt="" />
                         </frame-l>
                         <stack-l space="var(--s-3)">
-                          <h4 class="game-card__title">
-                            Dead By
-                            Daylight
-                          </h4>
-                          <p class="game-card__studio">
-                            Electronic
-                            Arts</p>
+                          <h4 class="game-card__title">The Last Of Us</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
                         </stack-l>
                       </stack-l>
                     </box-l>
-                  </a>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="deepest-chamber-10ect.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Deepest Chamber
-                        </h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="inmortals-of-aveum.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
                       </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="the-impossible.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="lor-gollum.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
                       </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="deadlink.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-impossible.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
                       </stack-l>
-                    </stack-l>
-                  </box-l>
-                  <box-l class="game-card">
-                    <stack-l space="var(--s-1)">
-                      <frame-l ratio="3:4">
-                        <img src="creepy-tale.jpg" alt="">
-                      </frame-l>
-                      <stack-l space="var(--s-3)">
-                        <h4 class="game-card__title">
-                          Egestas Sodales
-                          Morbi</h4>
-                        <p class="game-card__studio">
-                          Electronic Arts
-                        </p>
+                    </box-l>
+                  </grid-l>
+                </stack-l>
+              </section>
+
+              <section
+                id="tabpanel-4"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-4"
+                hidden
+              >
+                <stack-l space="var(--s2)">
+                  <h2 class="fs-s2">Los más vendidos</h2>
+                  <grid-l space="var(--s1)" min="208px" auto="fill">
+                    <a href="#">
+                      <box-l class="game-card">
+                        <stack-l space="var(--s-1)">
+                          <frame-l ratio="3:4">
+                            <img src="forest-fire.jpg" alt="" />
+                          </frame-l>
+                          <stack-l space="var(--s-3)">
+                            <h4 class="game-card__title">Dead By Daylight</h4>
+                            <p class="game-card__studio">Electronic Arts</p>
+                          </stack-l>
+                        </stack-l>
+                      </box-l>
+                    </a>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="deepest-chamber-10ect.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">Deepest Chamber</h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
                       </stack-l>
-                    </stack-l>
-                  </box-l>
-                </grid-l>
-              </stack-l>
-              </sectionid>
-          </div>
-          <div></div>
-        </stack-l>
-      </main>
-      <!-- <footer>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="the-impossible.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="deadlink.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                    <box-l class="game-card">
+                      <stack-l space="var(--s-1)">
+                        <frame-l ratio="3:4">
+                          <img src="creepy-tale.jpg" alt="" />
+                        </frame-l>
+                        <stack-l space="var(--s-3)">
+                          <h4 class="game-card__title">
+                            Egestas Sodales Morbi
+                          </h4>
+                          <p class="game-card__studio">Electronic Arts</p>
+                        </stack-l>
+                      </stack-l>
+                    </box-l>
+                  </grid-l>
+                </stack-l>
+              </section>
+            </div>
+            <div></div>
+          </stack-l>
+        </main>
+        <!-- <footer>
           <nav class="secondary-nav">
           <cluster-l justify="center">
           <a href="#"><i class="ri-youtube-fill"></i></a>
@@ -740,11 +758,9 @@
           </cluster-l>
           </nav>
           </footer> -->
-    </stack-l>
-  </center-l>
+      </stack-l>
+    </center-l>
 
-  <center-l max="80%">
-  </center-l>
-</body>
-
+    <center-l max="80%"> </center-l>
+  </body>
 </html>
